@@ -20,3 +20,8 @@ def filter_list_only_filename(original_list):
 
 def filter_list_lowercase(original_list):
     return [i.lower() for i in original_list]
+
+
+def read_file(filepath):
+    with open(filepath, 'r', errors='ignore') as f:
+        return f.read()
